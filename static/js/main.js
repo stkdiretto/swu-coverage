@@ -12,7 +12,7 @@ $(function() {
     );
 
     map = new L.Map('map', {
-        center: new L.LatLng(52.51538, 13.40997),
+        center: new L.LatLng(48.39933, 9.98422),
         zoom: 8,
         layers: [layer_CloudMate]
     });
@@ -26,7 +26,7 @@ $(function() {
     var initRadius = 800;
     $('input.range').attr('value', initRadius);
 
-    var coverageLayer = new L.TileLayer.MaskCanvas({'opacity': 0.5, radius: initRadius, useAbsoluteRadius: true, 'attribution': 'Get the data at <a href="//daten.berlin.de/datensaetze/vbb-fahrplan2012">daten.berlin.de</a>. Code on <a href="//github.com/domoritz/vbb-coverage">Github</a>'});
+    var coverageLayer = new L.TileLayer.MaskCanvas({'opacity': 0.5, radius: initRadius, useAbsoluteRadius: true, 'attribution': 'Get the data at <a href="http://www.swu.de/privatkunden/swu-nahverkehr/gtfs-daten.html">swu.de</a>. Code on <a href="//github.com/domoritz/vbb-coverage">Github</a>'});
 
     var loadOverlay = function(id) {
         var url = 'data/' + id + '.json';
@@ -40,7 +40,7 @@ $(function() {
         });
     };
 
-    loadOverlay('VBB');
+    loadOverlay('SWU');
 
     $('input.range').change(function() {
         var value = $(this).val();

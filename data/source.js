@@ -6,8 +6,8 @@ var sources = [
                 'text': 'Germany',
                 'children': [
                     {
-                        'id': 'VBB',
-                        'text': 'Verkehrsverbund Berlin Brandenburg'
+                        'id': 'SWU',
+                        'text': 'SWU Nahverkehr Ulm Neu-Ulm GmbH'
                     }
                 ]
             }
